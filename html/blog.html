@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Blog sahifa</title>
+</head>
+<body class="container w-10/12  mx-auto">
+    <!-- <h1>Bllog sahifa</h1> -->
+    <MAIN  class="flex justify-between text-lg border-1 border-[#6c757d;] p-2">
+        <div class="flex gap-1 bg-[#dc3545;]">
+            <img  src="./imgs/icon-dolzarf.svg" alt="logo">
+            <p class="font-bold text-[#fff] px-3" >DOLZARB XABARLAR</p>
+        </div>
+        <div>
+            <button class="text-lg font-bold px-1 hover:bg-[#6c757d]"><</button>
+            <button class="text-lg font-bold px-1  hover:bg-[#6c757d]">></button>
+        </div>
+       </MAIN>
+       <div class=" p-4 m-3 border-b-2 border-[#6c757d]">
+        <img  class="mx-auto w-150px " src="	https://davr24.uz/wp-content/uploads/2020/05/logo-for-website-04-2-4.png" alt="main-img">
+       </div>
+
+
+       <main class="flex gap-4 m-4">
+        <section class="w-[30%] border-2 border-[#6c757d] h-[500px]">
+            <div id="malumotler" class="bg-[#fff]">
+                <div class="flex justify-between px-5 py-3">
+                 <h2 class="text-2xl font-bold text-[#6c757d]">Malunotler bolimi </h2>
+                </div>
+                <img class="w-[50%] mx-auto  rounded-[50%] m-4 mb-3" src="../imgs/cantaci_img.svg" alt="cantract_img">
+                <div>
+                 <ul>
+                     <li id="malumotadd" class="text-xl font-bold text-[#6c757d ] p-1 hover:text-[#dc3545] mx-4 hover:border-1 border-[#6c757d] rounded-lg" ><a href="../html/malumot.html">Malumotlar</a></li>
+                     <li id="addyangi" class="text-xl font-bold text-[#6c757d ] p-1 hover:text-[#dc3545] mx-4 hover:border-1 border-[#6c757d] rounded-lg" ><a href="../html/blog.html">Yangilik qo'shish</a></li>
+                     <li id="addblogyangi" class="text-xl font-bold text-[#6c757d ] p-1 hover:text-[#dc3545] mx-4 hover:border-1 border-[#6c757d] rounded-lg" ><a href="../index.html">Yangiliklar</a></li>
+                 </ul>
+                </div>
+                <div class="flex justify-between ">
+              <a href="../index.html">   <button class="hover:rounded-lg hover:text-[#dc3545] text-xl rounded-lg p-2  font-bold text-lg text-[#6c757d] hover:border-1 mx-4 ">CHiqish</button></a>
+                </div>
+         
+             </div>
+        </section>
+        <section class="border-2 w-[68%] h-[500px] erflow-auto overflow-y-scroll">
+            <div class="w-full">
+                <h2 class="text-2xl font-bold text-[#6c757d] text-center m-4">Yangiliklar Qo'shish</h2>
+                <form class="flex flex-col w-2/3 mx-auto">
+                    <label  class="font-bold py-1 px-3" for="">Yangilik nomini kiriting</label>
+                    <input  class="font-bold py-1 px-3 border-2 rounded-xl border-[#6c757d]" type="text" id="title" placeholder="Yangilik haqida qo'shish">
+                    <label  class="font-bold py-1 px-3" for="">Yangiliklar soni </label>
+                    <input  class="font-bold py-1 px-3 border-2 rounded-xl border-[#6c757d]" id="category" type="number" placeholder="yangiliklar sonini kiriting">
+                    <label  class="font-bold py-1 px-3" for="">Batafsil malumot </label>
+                    <input  class="font-bold py-1 px-3 border-2 rounded-xl border-[#6c757d]" id="description" type="text" placeholder="Batafsil malumot">
+                    <label  class="font-bold py-1 px-3" for="">Rasmi</label>
+                    <input  class="font-bold py-1 px-3 border-2 rounded-xl border-[#6c757d]" type="file" id="image">
+                </form>
+                <button  class="hover:bg-[#6c757d] rounded-lg p-2  border-2  font-bold text-lg text-[#6c757d] hover:text-[#343a40] w-[200px] ml-[300px] my-5" onclick="addbloglist()">Malumot qo'shish</button>
+            </div>
+    
+
+        </section>
+       </main>
+       <footer>
+        <div class="flex gap-3 justify-between px-6">
+            <p class="font-bold text-[#6c757d]">2023 DAVR24.UZ. Bizning hamkorlikni yoki boshqarishni qo'llab-quvvatlaydik.</p>
+            <a class="font-bold text-[#6c757d] hover:text-[#dc3545]" href="">Tel: +998 90 126 11 16</a>
+        </div>
+       </footer>
+    
+
+
+
+       <script src="../JS/add_blog.js"></script>
+       <script src="../JS/blog.js"></script>
+</body>
+</html>

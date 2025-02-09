@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>blogssaa</title>
+</head>
+<body class="">
+     <section class="w-10/12 mx-auto ">
+        <h1 class=" text-3xl font-bold text-center p-6 mt-4">Batafsil malumotlar</h1>
+      
+
+        <div id="addblog">
+
+        </div>
+
+        <div class="flex   gap-10">
+             <div class="w-1/2">
+                 <div class="p-6 bg-gray-100">
+                     <img id="img" class="w-full  object-cover object-center" src="" alt="blog1">
+                     <div class="mt-4">
+                         <h2 id="title" class="text-xl font-bold"><a href="#"></a></h2>
+                         <p id="data" class="text-sm font-bold text=[#6c757d]" ></p>
+                         <p id="discription" class="text-sm text-gray-600"></p>
+                     </div>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class=" flex flex-col gap-5">
+                        <input id="comment" class="font-bold py-1 w-full px-3 border-2 rounded-xl border-[#6c757d]" type="text" placeholder="Kamentariya...">
+                         <button onclick="addCommit()" class=" mx-auto bg-blue-500 text-white py-2 px-4 mb-2 rounded-md">Komentar yuborish</button>
+                     </div>
+                     <div class="border-2 overflow-y-scroll h-[400px] border-[#6c757d] rounded-xl  ">
+                        <div id="commetid" class="grid grid-row-2"> 
+                                <!-- <p id="comment1" class="text-sm flex flex-col gap-5 font-bold   border-2 border-[#6c757d] px-4 py-2 m-6 rounded-xl">Lorem ipsum dolor sit amet consectetur adipisicing.
+                                <span id="commentdata" class="text-sm text-[#6c757d] text-right">2022-01-01</span>
+                                    </p> -->
+                                
+                        
+                             
+                        </div>
+
+                     </div>
+                     
+                </div>
+     </section>
+
+
+
+     <script src="../JS/blogss.js"></script>
+</body>
+</html>
