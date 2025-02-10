@@ -30,6 +30,10 @@ async function regestratsiya() {
 
             let data = await fetch(`https://asadbek6035.pythonanywhere.com/account/register/`,
                 { method: "POST", 
+                    headers:{
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${tocin}`
+                    },
                     body: form_data,
                 })
                 let res = await data.json();
