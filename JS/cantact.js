@@ -30,10 +30,6 @@ async function regestratsiya() {
 
             let data = await fetch(`https://asadbek6035.pythonanywhere.com/account/register/`,
                 { method: "POST", 
-                    headers:{
-                        "Content-Type": "application/json",
-                        "Authorization": `Bearer ${tocin}`
-                    },
                     body: form_data,
                 })
                 let res = await data.json();
@@ -45,18 +41,20 @@ async function regestratsiya() {
                     password.value = "";
                     password2.value = "";
                     avatar.value = "";
-                    window.location.assign("http://127.0.0.1:5500/html/cantactss.html");
+                    
+                    window.location.pathname = `html/cantactss.html`
                 }
+            }
+            
         }
-
+        catch (error) {
+            alert(error.message)
+            
+            
+        }
     }
-    catch (error) {
-        alert(error.message)
-
-
-    }
-
-
+        
+        
 
 
 
@@ -70,4 +68,3 @@ async function regestratsiya() {
     // };
     // console.log(body);
 
-}

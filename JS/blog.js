@@ -6,11 +6,7 @@ let tocin = localStorage.getItem("acccessTocin");
 
 async function addbloglist() {
     try {
-        if (!tocin) throw new Error("Ro'yxatdan o'tmagansiz!");
-        if (!title.value.trim() || !category.value.trim() || !description.value.trim()) {
-            throw new Error("Barcha maydonlarni to‘ldiring!");
-        }
-        if (!image.files[0]) throw new Error("Rasm tanlanmagan!");
+        if (!tocin) throw new Error("ro'yhatdan o'tmagansiz");
 
         const bloc_add = new FormData();
         bloc_add.append("title", title.value);
@@ -34,12 +30,10 @@ async function addbloglist() {
             }
            )
            res = await res.json()
+           alert("Blog muvaffaqiyatli qo‘shildi!");
            console.log(res)
-        if (result.success) {
-            alert("Blog muvaffaqiyatli qo‘shildi!");
-        } else {
-            alert("Xatolik: " + (result.message || "Noma'lum xatolik"));
-        }
+           
+        
 
     } catch (error) {
         alert(error.message);

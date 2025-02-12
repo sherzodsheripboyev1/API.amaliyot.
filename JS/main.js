@@ -12,7 +12,7 @@ menu_24.addEventListener("click", function () {
 
 close_malumotler.addEventListener("click", function () {
     malumotler.classList.add("hidden");
-    console.log("salghxfj");
+    console.log("");
 
 });
 

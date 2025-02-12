@@ -41,7 +41,6 @@ addblogess()
 
 
 async function getByCommit(){
-    commetid.innerHTML = ""
     let res = await fetch(`https://asadbek6035.pythonanywhere.com/blog/comment/list?blog_id=${id}`,
         {
             method: "GET",
@@ -56,7 +55,6 @@ async function getByCommit(){
     
 
     res.forEach(element => {
-
         let div = document.createElement("div")
          body = `
         <p id="comment1" class="text-sm flex flex-col gap-5 font-bold   border-2 border-[#6c757d] px-4 py-2 m-6 rounded-xl">${element.description}
